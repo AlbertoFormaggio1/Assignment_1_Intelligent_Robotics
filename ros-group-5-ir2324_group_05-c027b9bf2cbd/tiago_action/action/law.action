@@ -1,0 +1,12 @@
+#goal
+float64 distance
+---
+
+#result
+bool position
+
+---
+#feedback
+float64 x
+float64 y
+float64 th

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- roslaunch tiago_action tiago_action.launch point_b:="x y w" -->
+    <arg name = "point_b" default="10.5 1 0.5"/>
+
+    <node name = "client" pkg="tiago_action" type="client" args="$(arg point_b)" output="screen"/>
+    <node name = "server" pkg="tiago_action" type="server"/>
+    <node name = "law" pkg="tiago_action" type="law"/>
+</launch>
